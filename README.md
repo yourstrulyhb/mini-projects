@@ -1,4 +1,3 @@
-# Timers
+# Web Mini Projects
 
-Here are countdown timers I made as mini projects
-
+Mini projects to sharpen skills in and learn new things about HTML, CSS, and Javascript.

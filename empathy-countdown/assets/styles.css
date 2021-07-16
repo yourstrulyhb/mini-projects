@@ -23,6 +23,13 @@ body {
    overflow: hidden;
 }
 
+.event-title {
+   position: relative;
+   width: 750px;
+   margin: 10px 0 40px;
+   border-bottom: solid 4px white;
+}
+
 h1 {
    font-weight: normal;
    font-size: 50px;
@@ -30,12 +37,6 @@ h1 {
    font-weight: bolder;
    line-height: 1;
    text-align: left;
-}
-
-.event-title {
-   width: 750px;
-   margin: -130px 0 40px;
-   border-bottom: solid 4px white;
 }
 
 .countdown {
@@ -69,8 +70,8 @@ h1 {
 }
 
 .event-details {
-   position: absolute;
-   bottom: 120px;
+   position: relative;
+   padding-top: 80px;
 }
 
 footer {
@@ -93,10 +94,25 @@ footer small#image-courtesy {
    float: left;
 }
 
-@media(max-width: 650px) {
+@media(max-width: 750px) {
+
+   .event-title {
+   width: 95%;
+   margin: 50px 0px 40px;
+   border-bottom: solid 3px white;
+   }
 
    h1 {
       font-size: 45px;
+   }
+
+   h1 small {
+       font-size: 25px;
+   }
+
+   .countdown {
+      margin: 10px;
+      margin-top: 20px;
    }
 
    .time {
@@ -104,10 +120,22 @@ footer small#image-courtesy {
    }
 
    .time h2 {
-      font-size: 20px;
+      font-size: 25px;
    }
 
    .time small {
       font-size: 10px;
+   }
+
+   .event-details {
+      padding-top: 160px;
+   }
+
+   .event-details small {
+      font-size: 12px;
+   }
+
+   footer small {
+      font-size: 12px;
    }
 }

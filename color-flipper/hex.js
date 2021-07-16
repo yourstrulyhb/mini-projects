@@ -19,7 +19,7 @@ btn.addEventListener('click', function () {
    color.textContent = " " + hexColor;
    color.style.color = hexColor;
 
-   contrastColor = checkContrastYOQ(hexColor);
+   contrastColor = checkContrastYIQ(hexColor);
    container.style.backgroundColor = contrastColor;
    btn.style.backgroundColor = contrastColor;
    btn.style.color = hexColor;

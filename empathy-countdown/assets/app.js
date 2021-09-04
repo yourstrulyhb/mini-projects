@@ -10,7 +10,8 @@ function updateCountdownTime() {
 
    const currentTime = new Date();
    const timeDiff = endDatetime - currentTime;     // amount of time (seconds) 'til end date
-
+   timeDiff = timeDiff <= 0? 0: timeDiff;
+   
    const daysLeft = Math.floor(timeDiff / 1000 / 60 / 60 / 24);
    const hrsLeft = Math.floor(timeDiff / 1000 / 60 / 60) % 24;
    const minsLeft = Math.floor(timeDiff / 1000 / 60) % 60;
